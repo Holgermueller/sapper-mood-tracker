@@ -57,6 +57,12 @@
     </li>
     <li>
       <a
+        aria-current={segment === 'dashboard' ? 'page' : undefined}
+        href="dashboard">
+        dashboard</a>
+    </li>
+    <li>
+      <a
         aria-current={segment === 'about' ? 'page' : undefined}
         href="about">about</a>
     </li>
