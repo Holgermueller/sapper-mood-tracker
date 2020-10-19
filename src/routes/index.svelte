@@ -1,10 +1,20 @@
 <script>
-  import successkid from "images/successkid.jpg";
+  import Tabs from "../shared/Tabs.svelte";
+  import Registration from "../LoginRegistration/Registration.svelte";
+  import Login from "../LoginRegistration/Login.svelte";
+
+  let items = ["Registration", "Login"];
+
+  let activeItem = "Registration";
+  const tabChange = (e) => (activeItem = e.detail);
+
+  const handleAdd = () => {
+    activeItem = "Login";
+  };
 </script>
 
 <style>
   h1,
-  figure,
   p {
     text-align: center;
     margin: 0 auto;
@@ -15,16 +25,6 @@
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
   }
 
   p {
@@ -45,3 +45,10 @@
 <h1>Welcome to the Mood Tracker!</h1>
 
 <p><strong>Keep track of your mood swings here!!</strong></p>
+
+<Tabs {activeItem} {items} on:tabChange={tabChange} />
+{#if activeItem === 'Registration'}
+  <Registration />
+{:else if activeItem === 'Login'}
+  <Login />
+{/if}
