@@ -15,12 +15,16 @@
 
 <style>
   h2 {
-    margin: 8px auto;
+    margin: 16px auto;
+    text-align: center;
   }
   fieldset {
     width: 55%;
     margin: 8px auto;
     border-radius: 15px;
+  }
+  legend {
+    text-align: center;
   }
   button {
     margin: 4px;
