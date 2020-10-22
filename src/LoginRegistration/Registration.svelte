@@ -62,9 +62,11 @@
   }
   .error {
     color: red;
+    text-align: center;
   }
   .success {
     color: green;
+    text-align: center;
   }
   .clear {
     border-color: red;
@@ -126,7 +128,7 @@
     {/if}
 
     {#if success}
-      <p>Welcome {$User.username}!</p>
+      <p class="success">Welcome {$User.username}!</p>
       <p class="success">{success}</p>
     {/if}
 
