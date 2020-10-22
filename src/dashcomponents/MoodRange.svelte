@@ -1,5 +1,5 @@
 <script>
-  import { MoodStore } from "../../stores/MoodStore";
+  import { MoodStore } from "../stores/MoodStore";
 
   const addTodaysMood = (e) => {
     MoodStore.update((moods) => {

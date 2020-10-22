@@ -1,5 +1,5 @@
 <script>
-  import { MoodStore } from "../../stores/MoodStore";
+  import { MoodStore } from "../stores/MoodStore";
   $: daysTracked = $MoodStore.reduce((a, { timesFelt }) => a + timesFelt, 0);
 </script>
 

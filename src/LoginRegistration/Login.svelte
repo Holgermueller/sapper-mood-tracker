@@ -1,5 +1,5 @@
 <script>
-  import { User } from "../../stores/UsersStore";
+  import { User } from "../stores/UsersStore";
   let username = "";
   let password = "";
   let error = "";
