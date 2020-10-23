@@ -45,8 +45,11 @@
 <style>
   fieldset {
     width: 75%;
-    margin: auto;
+    margin: 1px auto 16px;
     border-radius: 8px;
+  }
+  legend {
+    text-align: center;
   }
   .input {
     width: 100%;

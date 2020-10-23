@@ -39,6 +39,9 @@
     margin: auto;
     border-radius: 8px;
   }
+  legend {
+    text-align: center;
+  }
   .input {
     width: 100%;
     border: none;
@@ -101,10 +104,10 @@
       <p class="success">{success}</p>
     {/if}
 
-    <button id="clear" class="clear" on:click={clearForm}>Clear</button>
+    <button id="clear" class="input clear" on:click={clearForm}>Clear</button>
     <button
       id="submit"
-      class="submit"
+      class="input submit"
       disabled={!username || !password}>Submit</button>
   </form>
 </fieldset>
