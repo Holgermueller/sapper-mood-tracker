@@ -22,6 +22,7 @@
     width: 55%;
     margin: 8px auto;
     border-radius: 15px;
+    text-align: center;
   }
   legend {
     text-align: center;
@@ -29,7 +30,6 @@
   button {
     margin: 4px;
     border-radius: 7px;
-    width: 15%;
   }
 </style>
 
